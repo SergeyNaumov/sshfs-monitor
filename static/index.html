@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSHFS Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SSHFS Manager</h1>
+
+    <!-- Поле для поиска -->
+    <div>
+        <input type="text" id="search-input" placeholder="Поиск соединения..." oninput="filterConnections()">
+    </div>
+
+    <!-- Таблица соединений -->
+    <table id="connections-table">
+        <thead>
+            <tr>
+                <th>Соединение</th>
+                <th>Точка монтирования</th>
+                <th>Состояние</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Данные будут загружены через JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
